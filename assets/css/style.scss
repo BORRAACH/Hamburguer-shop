@@ -1,0 +1,18 @@
+@import 'base';
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition:  .25s;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: $primary-font;
+}
+
+body{
+
+  nav{
+    @include nav
+  }
+}
