@@ -4,7 +4,7 @@ module.exports = {
   mode: "development",
   entry: ["./src/js/index.js", "./src/sass/style.scss"],
   output: {
-    path: path.resolve(__dirname, "public", "assets", "js"),
+    path: path.resolve(__dirname, "public", "js"),
     filename: "bundle.js",
   },
   module: {
