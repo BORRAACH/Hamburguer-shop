@@ -1,0 +1,86 @@
+@mixin nav {
+  width: 100%;
+  height: 9vh;
+
+  background: rgba(0, 0, 0, 0.836);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+
+  display: flex;
+  justify-content: space-between;
+
+  padding-left: 4vw;
+  padding-right: 4vw;
+
+  .left-box {
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+
+    .cardapio-box {
+      height: 100%;
+
+      .produtos {
+        width: 100vw;
+
+        padding: 3vw 6vh;
+
+        top: 9vh;
+        right: 0.01%;
+
+        background: #ffffff;
+
+        display: none;
+        position: absolute;
+        z-index: 100;
+
+        .line {
+          display: flex;
+          justify-content: space-between;
+
+          i {
+            color: #000;
+            scale: 2.4;
+          }
+        }
+
+        $i: 0;
+        @for $i from 2 through 5 {
+          .line-#{$i} {
+            margin-top: 6vh;
+          }
+        }
+      }
+    }
+
+    .items-nav {
+      height: 100%;
+
+      color: #fff;
+      font-size: 1.2rem;
+
+      display: flex;
+      align-items: center;
+
+      padding-left: 0.7rem;
+      padding-right: 0.7rem;
+    }
+  }
+
+  .right-box {
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+
+    #compra {
+      padding: 1.3rem;
+      border-radius: 3px;
+
+      background: rgb(224, 93, 18);
+      color: #fff;
+    }
+  }
+}

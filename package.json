@@ -1,0 +1,38 @@
+{
+  "name": "web-lanches",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "gera": "webpack -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BORRAACH/Hamburguer-shop.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BORRAACH/Hamburguer-shop/issues"
+  },
+  "homepage": "https://github.com/BORRAACH/Hamburguer-shop#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.21.0",
+    "@babel/core": "^7.21.4",
+    "@babel/preset-env": "^7.21.4",
+    "babel-loader": "^9.1.2",
+    "core-js": "^2.6.12",
+    "css-loader": "^6.7.3",
+    "node-sass": "^8.0.0",
+    "regenerator-runtime": "^0.13.11",
+    "sass": "^1.60.0",
+    "sass-loader": "^13.2.2",
+    "style-loader": "^3.3.2",
+    "webpack": "^5.77.0",
+    "webpack-cli": "^5.0.1"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.14"
+  }
+}

@@ -1,0 +1,3 @@
+function loadElement() {}
+
+export { loadElement };

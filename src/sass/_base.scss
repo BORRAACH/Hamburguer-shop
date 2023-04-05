@@ -1,0 +1,12 @@
+@import url(//db.onlinewebfonts.com/c/35b626a8e74729592e71dad8350302db?family=McDonalds);
+
+$primary-font: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen",
+  "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+  "Helvetica", "Arial", sans-serif;
+
+@mixin body() {
+  height: 100vh;
+
+  background: url(../img/kimi.png) center/cover;
+  background-repeat: no-repeat;
+}

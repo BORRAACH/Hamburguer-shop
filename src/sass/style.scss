@@ -1,0 +1,25 @@
+@import "base";
+@import "mobile";
+@import "nav";
+@import "container";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 0.25s;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: $primary-font;
+}
+
+body {
+  @include body;
+
+  nav {
+    @include nav;
+  }
+  .container {
+    @include first-container;
+  }
+}
