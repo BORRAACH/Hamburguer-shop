@@ -5,24 +5,60 @@
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 
-  position: absolute;
-  z-index: -1;
+  z-index: 0;
+
+  position: relative;
 
   display: flex;
   align-items: center;
 
+  overflow-x: auto;
+  overflow-y: hidden;
+
+  .produtos {
+    padding: 3vw 6vh;
+
+    top: 9vh;
+    margin: 0 auto;
+
+    background: #ffffff;
+
+    display: none;
+    position: fixed;
+    z-index: 800;
+
+    .line {
+      display: flex;
+      justify-content: space-between;
+
+      i {
+        color: #000;
+        scale: 2.4;
+      }
+    }
+
+    $i: 0;
+    @for $i from 2 through 5 {
+      .line-#{$i} {
+        margin-top: 6vh;
+      }
+    }
+  }
+
   .slide-box {
-    width: 100%;
     height: 100%;
 
-    overflow-x: hidden;
-
     display: flex;
-    align-items: center;
+    flex-flow: row nowrap;
+    position: relative;
 
     .slide {
-      width: 100%;
-      height: 100%;
+      width: 100vw;
+      height: 80vh;
+    }
+
+    .slide-1 {
+      background: #000;
     }
   }
 }

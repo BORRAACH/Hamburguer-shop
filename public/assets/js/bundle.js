@@ -2,6 +2,21 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/js/mainComponents/adversting.js":
+/*!*********************************************!*\
+  !*** ./src/js/mainComponents/adversting.js ***!
+  \*********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "loadElement": () => (/* binding */ loadElement)
+/* harmony export */ });
+function loadElement() {}
+
+
+/***/ }),
+
 /***/ "./src/js/nav.js":
 /*!***********************!*\
   !*** ./src/js/nav.js ***!
@@ -15,8 +30,11 @@ __webpack_require__.r(__webpack_exports__);
 function globalNav() {
   var nav = document.querySelector("#first-nav");
   var navA = document.querySelectorAll(".items-nav");
+  var largura = "".concat(window.innerWidth - 100, "px");
+  var body = document.querySelector("body");
   var produtos = document.querySelector(".produtos");
   var cardapio = document.querySelector("#cardapio");
+  produtos.style.width = largura;
   cardapio.addEventListener("mouseover", function () {
     produtos.style.display = "block";
   });
@@ -31,6 +49,28 @@ function globalNav() {
   produtos.addEventListener("mouseout", function () {
     produtos.style.display = "none";
   });
+  console.log(largura);
+}
+
+
+/***/ }),
+
+/***/ "./src/js/slideContainer.js":
+/*!**********************************!*\
+  !*** ./src/js/slideContainer.js ***!
+  \**********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "globalSlideCont": () => (/* binding */ globalSlideCont)
+/* harmony export */ });
+/* harmony import */ var _mainComponents_adversting__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./mainComponents/adversting */ "./src/js/mainComponents/adversting.js");
+
+function globalSlideCont() {
+  var slideCont = document.querySelector("#slide-cont-1");
+  var nav = document.querySelector("#first-nav");
+  slideCont.style.marginTop = nav.style.height;
 }
 
 
@@ -62,7 +102,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, "@import url(//db.onlinewebfonts.com/c/
 ___CSS_LOADER_EXPORT___.push([module.id, "@import url(//db.onlinewebfonts.com/c/35b626a8e74729592e71dad8350302db?family=McDonalds);"]);
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n  transition: 0.25s;\n  list-style-type: none;\n  text-decoration: none;\n  font-family: BlinkMacSystemFont, -apple-system, \"Segoe UI\", \"Roboto\", \"Oxygen\", \"Ubuntu\", \"Cantarell\", \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", \"Helvetica\", \"Arial\", sans-serif;\n}\n\nbody {\n  height: 100vh;\n  background: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ") center/cover;\n  background-repeat: no-repeat;\n}\nbody nav {\n  width: 100%;\n  height: 9vh;\n  background: rgba(0, 0, 0, 0.836);\n  -webkit-backdrop-filter: blur(5px);\n  backdrop-filter: blur(5px);\n  display: flex;\n  justify-content: space-between;\n  padding-left: 4vw;\n  padding-right: 4vw;\n}\nbody nav .left-box {\n  display: flex;\n  align-items: center;\n  width: 100%;\n  height: 100%;\n}\nbody nav .left-box .cardapio-box {\n  height: 100%;\n}\nbody nav .left-box .cardapio-box .produtos {\n  width: 100vw;\n  padding: 3vw 6vh;\n  top: 9vh;\n  right: 0.01%;\n  background: #ffffff;\n  display: none;\n  position: absolute;\n  z-index: 100;\n}\nbody nav .left-box .cardapio-box .produtos .line {\n  display: flex;\n  justify-content: space-between;\n}\nbody nav .left-box .cardapio-box .produtos .line i {\n  color: #000;\n  scale: 2.4;\n}\nbody nav .left-box .cardapio-box .produtos .line-2 {\n  margin-top: 6vh;\n}\nbody nav .left-box .cardapio-box .produtos .line-3 {\n  margin-top: 6vh;\n}\nbody nav .left-box .cardapio-box .produtos .line-4 {\n  margin-top: 6vh;\n}\nbody nav .left-box .cardapio-box .produtos .line-5 {\n  margin-top: 6vh;\n}\nbody nav .left-box .items-nav {\n  height: 100%;\n  color: #fff;\n  font-size: 1.2rem;\n  display: flex;\n  align-items: center;\n  padding-left: 0.7rem;\n  padding-right: 0.7rem;\n}\nbody nav .right-box {\n  height: 100%;\n  display: flex;\n  align-items: center;\n}\nbody nav .right-box #compra {\n  padding: 1.3rem;\n  border-radius: 3px;\n  background: rgb(224, 93, 18);\n  color: #fff;\n}\nbody .container {\n  width: 100vw;\n  height: 80vh;\n  backdrop-filter: blur(10px);\n  -webkit-backdrop-filter: blur(10px);\n  position: absolute;\n  z-index: -1;\n  display: flex;\n  align-items: center;\n}\nbody .container .slide-box {\n  width: 100%;\n  height: 100%;\n  overflow-x: hidden;\n  display: flex;\n  align-items: center;\n}\nbody .container .slide-box .slide {\n  width: 100%;\n  height: 100%;\n}", "",{"version":3,"sources":["webpack://./src/sass/style.scss","webpack://./src/sass/_base.scss","webpack://./src/sass/_nav.scss","webpack://./src/sass/_container.scss"],"names":[],"mappings":"AAKA;EACE,SAAA;EACA,UAAA;EACA,sBAAA;EACA,iBAAA;EACA,qBAAA;EACA,qBAAA;EACA,oLCVa;ADQf;;AAKA;ECRE,aAAA;EAEA,gEAAA;EACA,4BAAA;ADMF;AAEE;EEjBA,WAAA;EACA,WAAA;EAEA,gCAAA;EACA,kCAAA;EACA,0BAAA;EAEA,aAAA;EACA,8BAAA;EAEA,iBAAA;EACA,kBAAA;AFeF;AEbE;EACE,aAAA;EACA,mBAAA;EAEA,WAAA;EACA,YAAA;AFcJ;AEZI;EACE,YAAA;AFcN;AEZM;EACE,YAAA;EAEA,gBAAA;EAEA,QAAA;EACA,YAAA;EAEA,mBAAA;EAEA,aAAA;EACA,kBAAA;EACA,YAAA;AFUR;AERQ;EACE,aAAA;EACA,8BAAA;AFUV;AERU;EACE,WAAA;EACA,UAAA;AFUZ;AEJU;EACE,eAAA;AFMZ;AEPU;EACE,eAAA;AFSZ;AEVU;EACE,eAAA;AFYZ;AEbU;EACE,eAAA;AFeZ;AETI;EACE,YAAA;EAEA,WAAA;EACA,iBAAA;EAEA,aAAA;EACA,mBAAA;EAEA,oBAAA;EACA,qBAAA;AFQN;AEJE;EACE,YAAA;EAEA,aAAA;EACA,mBAAA;AFKJ;AEHI;EACE,eAAA;EACA,kBAAA;EAEA,4BAAA;EACA,WAAA;AFIN;AAjEE;EGpBA,YAAA;EACA,YAAA;EAEA,2BAAA;EACA,mCAAA;EAEA,kBAAA;EACA,WAAA;EAEA,aAAA;EACA,mBAAA;AHqFF;AGnFE;EACE,WAAA;EACA,YAAA;EAEA,kBAAA;EAEA,aAAA;EACA,mBAAA;AHmFJ;AGjFI;EACE,WAAA;EACA,YAAA;AHmFN","sourcesContent":["@import \"base\";\n@import \"mobile\";\n@import \"nav\";\n@import \"container\";\n\n* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n  transition: 0.25s;\n  list-style-type: none;\n  text-decoration: none;\n  font-family: $primary-font;\n}\n\nbody {\n  @include body;\n\n  nav {\n    @include nav;\n  }\n  .container {\n    @include first-container;\n  }\n}\n","@import url(//db.onlinewebfonts.com/c/35b626a8e74729592e71dad8350302db?family=McDonalds);\n\n$primary-font: BlinkMacSystemFont, -apple-system, \"Segoe UI\", \"Roboto\", \"Oxygen\",\n  \"Ubuntu\", \"Cantarell\", \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\",\n  \"Helvetica\", \"Arial\", sans-serif;\n\n@mixin body() {\n  height: 100vh;\n\n  background: url(../img/kimi.png) center/cover;\n  background-repeat: no-repeat;\n}\n","@mixin nav {\n  width: 100%;\n  height: 9vh;\n\n  background: rgba(0, 0, 0, 0.836);\n  -webkit-backdrop-filter: blur(5px);\n  backdrop-filter: blur(5px);\n\n  display: flex;\n  justify-content: space-between;\n\n  padding-left: 4vw;\n  padding-right: 4vw;\n\n  .left-box {\n    display: flex;\n    align-items: center;\n\n    width: 100%;\n    height: 100%;\n\n    .cardapio-box {\n      height: 100%;\n\n      .produtos {\n        width: 100vw;\n\n        padding: 3vw 6vh;\n\n        top: 9vh;\n        right: 0.01%;\n\n        background: #ffffff;\n\n        display: none;\n        position: absolute;\n        z-index: 100;\n\n        .line {\n          display: flex;\n          justify-content: space-between;\n\n          i {\n            color: #000;\n            scale: 2.4;\n          }\n        }\n\n        $i: 0;\n        @for $i from 2 through 5 {\n          .line-#{$i} {\n            margin-top: 6vh;\n          }\n        }\n      }\n    }\n\n    .items-nav {\n      height: 100%;\n\n      color: #fff;\n      font-size: 1.2rem;\n\n      display: flex;\n      align-items: center;\n\n      padding-left: 0.7rem;\n      padding-right: 0.7rem;\n    }\n  }\n\n  .right-box {\n    height: 100%;\n\n    display: flex;\n    align-items: center;\n\n    #compra {\n      padding: 1.3rem;\n      border-radius: 3px;\n\n      background: rgb(224, 93, 18);\n      color: #fff;\n    }\n  }\n}\n","@mixin first-container {\n  width: 100vw;\n  height: 80vh;\n\n  backdrop-filter: blur(10px);\n  -webkit-backdrop-filter: blur(10px);\n\n  position: absolute;\n  z-index: -1;\n\n  display: flex;\n  align-items: center;\n\n  .slide-box {\n    width: 100%;\n    height: 100%;\n\n    overflow-x: hidden;\n\n    display: flex;\n    align-items: center;\n\n    .slide {\n      width: 100%;\n      height: 100%;\n    }\n  }\n}\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "* {\n  margin: 0;\n  padding: 0;\n  transition: 0.25s;\n  list-style-type: none;\n  text-decoration: none;\n  font-family: BlinkMacSystemFont, -apple-system, \"Segoe UI\", \"Roboto\", \"Oxygen\", \"Ubuntu\", \"Cantarell\", \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", \"Helvetica\", \"Arial\", sans-serif;\n}\n\nbody {\n  width: 100%;\n  height: 100vh;\n  background: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ") center/cover;\n  background-repeat: no-repeat;\n}\nbody nav {\n  width: 92%;\n  height: 9vh;\n  background: rgba(0, 0, 0, 0.836);\n  -webkit-backdrop-filter: blur(5px);\n  backdrop-filter: blur(5px);\n  display: flex;\n  justify-content: space-between;\n  position: fixed;\n  z-index: 1010;\n  padding-left: 4vw;\n  padding-right: 4vw;\n}\nbody nav .left-box {\n  display: flex;\n  align-items: center;\n  width: 100%;\n  height: 100%;\n}\nbody nav .left-box .items-nav {\n  height: 100%;\n  color: #fff;\n  font-size: 1.2rem;\n  display: flex;\n  align-items: center;\n  padding-left: 0.7rem;\n  padding-right: 0.7rem;\n}\nbody nav .right-box {\n  height: 100%;\n  display: flex;\n  align-items: center;\n}\nbody nav .right-box #compra {\n  padding: 1.3rem;\n  border-radius: 3px;\n  background: rgb(224, 93, 18);\n  color: #fff;\n}\nbody .container {\n  width: 100vw;\n  height: 80vh;\n  backdrop-filter: blur(10px);\n  -webkit-backdrop-filter: blur(10px);\n  z-index: 0;\n  position: relative;\n  display: flex;\n  align-items: center;\n  overflow-x: auto;\n  overflow-y: hidden;\n}\nbody .container .produtos {\n  padding: 3vw 6vh;\n  top: 9vh;\n  margin: 0 auto;\n  background: #ffffff;\n  display: none;\n  position: fixed;\n  z-index: 800;\n}\nbody .container .produtos .line {\n  display: flex;\n  justify-content: space-between;\n}\nbody .container .produtos .line i {\n  color: #000;\n  scale: 2.4;\n}\nbody .container .produtos .line-2 {\n  margin-top: 6vh;\n}\nbody .container .produtos .line-3 {\n  margin-top: 6vh;\n}\nbody .container .produtos .line-4 {\n  margin-top: 6vh;\n}\nbody .container .produtos .line-5 {\n  margin-top: 6vh;\n}\nbody .container .slide-box {\n  height: 100%;\n  display: flex;\n  flex-flow: row nowrap;\n  position: relative;\n}\nbody .container .slide-box .slide {\n  width: 100vw;\n  height: 80vh;\n}\nbody .container .slide-box .slide-1 {\n  background: #000;\n}", "",{"version":3,"sources":["webpack://./src/sass/style.scss","webpack://./src/sass/_base.scss","webpack://./src/sass/_nav.scss","webpack://./src/sass/_container.scss"],"names":[],"mappings":"AAKA;EACE,SAAA;EACA,UAAA;EAEA,iBAAA;EACA,qBAAA;EACA,qBAAA;EACA,oLCVa;ADOf;;AAMA;ECRE,WAAA;EACA,aAAA;EAEA,gEAAA;EACA,4BAAA;ADKF;AAEE;EEjBA,UAAA;EACA,WAAA;EAEA,gCAAA;EACA,kCAAA;EACA,0BAAA;EAEA,aAAA;EACA,8BAAA;EACA,eAAA;EACA,aAAA;EAEA,iBAAA;EACA,kBAAA;AFeF;AEbE;EACE,aAAA;EACA,mBAAA;EAEA,WAAA;EACA,YAAA;AFcJ;AEZI;EACE,YAAA;EAEA,WAAA;EACA,iBAAA;EAEA,aAAA;EACA,mBAAA;EAEA,oBAAA;EACA,qBAAA;AFWN;AEPE;EACE,YAAA;EAEA,aAAA;EACA,mBAAA;AFQJ;AENI;EACE,eAAA;EACA,kBAAA;EAEA,4BAAA;EACA,WAAA;AFON;AAlCE;EGpBA,YAAA;EACA,YAAA;EAEA,2BAAA;EACA,mCAAA;EAEA,UAAA;EAEA,kBAAA;EAEA,aAAA;EACA,mBAAA;EAEA,gBAAA;EACA,kBAAA;AHoDF;AGlDE;EACE,gBAAA;EAEA,QAAA;EACA,cAAA;EAEA,mBAAA;EAEA,aAAA;EACA,eAAA;EACA,YAAA;AHiDJ;AG/CI;EACE,aAAA;EACA,8BAAA;AHiDN;AG/CM;EACE,WAAA;EACA,UAAA;AHiDR;AG3CM;EACE,eAAA;AH6CR;AG9CM;EACE,eAAA;AHgDR;AGjDM;EACE,eAAA;AHmDR;AGpDM;EACE,eAAA;AHsDR;AGjDE;EACE,YAAA;EAEA,aAAA;EACA,qBAAA;EACA,kBAAA;AHkDJ;AGhDI;EACE,YAAA;EACA,YAAA;AHkDN;AG/CI;EACE,gBAAA;AHiDN","sourcesContent":["@import \"base\";\n@import \"mobile\";\n@import \"nav\";\n@import \"container\";\n\n* {\n  margin: 0;\n  padding: 0;\n  //box-sizing: border-box;\n  transition: 0.25s;\n  list-style-type: none;\n  text-decoration: none;\n  font-family: $primary-font;\n}\n\nbody {\n  @include body;\n\n  nav {\n    @include nav;\n  }\n  .container {\n    @include first-container;\n  }\n}\n","@import url(//db.onlinewebfonts.com/c/35b626a8e74729592e71dad8350302db?family=McDonalds);\n\n$primary-font: BlinkMacSystemFont, -apple-system, \"Segoe UI\", \"Roboto\", \"Oxygen\",\n  \"Ubuntu\", \"Cantarell\", \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\",\n  \"Helvetica\", \"Arial\", sans-serif;\n\n@mixin body() {\n  width: 100%;\n  height: 100vh;\n\n  background: url(../img/kimi.png) center/cover;\n  background-repeat: no-repeat;\n}\n","@mixin nav {\n  width: 92%;\n  height: 9vh;\n\n  background: rgba(0, 0, 0, 0.836);\n  -webkit-backdrop-filter: blur(5px);\n  backdrop-filter: blur(5px);\n\n  display: flex;\n  justify-content: space-between;\n  position: fixed;\n  z-index: 1010;\n\n  padding-left: 4vw;\n  padding-right: 4vw;\n\n  .left-box {\n    display: flex;\n    align-items: center;\n\n    width: 100%;\n    height: 100%;\n\n    .items-nav {\n      height: 100%;\n\n      color: #fff;\n      font-size: 1.2rem;\n\n      display: flex;\n      align-items: center;\n\n      padding-left: 0.7rem;\n      padding-right: 0.7rem;\n    }\n  }\n\n  .right-box {\n    height: 100%;\n\n    display: flex;\n    align-items: center;\n\n    #compra {\n      padding: 1.3rem;\n      border-radius: 3px;\n\n      background: rgb(224, 93, 18);\n      color: #fff;\n    }\n  }\n}\n","@mixin first-container {\n  width: 100vw;\n  height: 80vh;\n\n  backdrop-filter: blur(10px);\n  -webkit-backdrop-filter: blur(10px);\n\n  z-index: 0;\n\n  position: relative;\n\n  display: flex;\n  align-items: center;\n\n  overflow-x: auto;\n  overflow-y: hidden;\n\n  .produtos {\n    padding: 3vw 6vh;\n\n    top: 9vh;\n    margin: 0 auto;\n\n    background: #ffffff;\n\n    display: none;\n    position: fixed;\n    z-index: 800;\n\n    .line {\n      display: flex;\n      justify-content: space-between;\n\n      i {\n        color: #000;\n        scale: 2.4;\n      }\n    }\n\n    $i: 0;\n    @for $i from 2 through 5 {\n      .line-#{$i} {\n        margin-top: 6vh;\n      }\n    }\n  }\n\n  .slide-box {\n    height: 100%;\n\n    display: flex;\n    flex-flow: row nowrap;\n    position: relative;\n\n    .slide {\n      width: 100vw;\n      height: 80vh;\n    }\n\n    .slide-1 {\n      background: #000;\n    }\n  }\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -645,8 +685,11 @@ var __webpack_exports__ = {};
   \*************************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _nav__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./nav */ "./src/js/nav.js");
+/* harmony import */ var _slideContainer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./slideContainer */ "./src/js/slideContainer.js");
+
 
 (0,_nav__WEBPACK_IMPORTED_MODULE_0__.globalNav)();
+(0,_slideContainer__WEBPACK_IMPORTED_MODULE_1__.globalSlideCont)();
 })();
 
 // This entry need to be wrapped in an IIFE because it need to be isolated against other entry modules.

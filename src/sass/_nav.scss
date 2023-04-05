@@ -1,5 +1,5 @@
 @mixin nav {
-  width: 100%;
+  width: 92%;
   height: 9vh;
 
   background: rgba(0, 0, 0, 0.836);
@@ -8,6 +8,8 @@
 
   display: flex;
   justify-content: space-between;
+  position: fixed;
+  z-index: 1010;
 
   padding-left: 4vw;
   padding-right: 4vw;
@@ -18,42 +20,6 @@
 
     width: 100%;
     height: 100%;
-
-    .cardapio-box {
-      height: 100%;
-
-      .produtos {
-        width: 100vw;
-
-        padding: 3vw 6vh;
-
-        top: 9vh;
-        right: 0.01%;
-
-        background: #ffffff;
-
-        display: none;
-        position: absolute;
-        z-index: 100;
-
-        .line {
-          display: flex;
-          justify-content: space-between;
-
-          i {
-            color: #000;
-            scale: 2.4;
-          }
-        }
-
-        $i: 0;
-        @for $i from 2 through 5 {
-          .line-#{$i} {
-            margin-top: 6vh;
-          }
-        }
-      }
-    }
 
     .items-nav {
       height: 100%;
