@@ -6,8 +6,127 @@ $primary-font: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen"
 
 @mixin body() {
   width: 100%;
-  height: 100vh;
+}
 
-  background: url(../img/kimi.png) center/cover;
-  background-repeat: no-repeat;
+@mixin nav {
+  width: 92%;
+  height: 9vh;
+
+  background: #fff;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 1010;
+
+  padding-left: 4vw;
+  padding-right: 4vw;
+
+  .left-box {
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+
+    .items-nav {
+      height: 100%;
+
+      color: #242424;
+      font-size: 1.2rem;
+
+      display: flex;
+      align-items: center;
+
+      padding-left: 0.7rem;
+      padding-right: 0.7rem;
+    }
+  }
+
+  .right-box {
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+
+    #compra {
+      padding: 1.3rem;
+      border-radius: 3px;
+
+      background: rgb(224, 93, 18);
+      color: #fff;
+    }
+  }
+}
+
+@mixin first-container {
+  width: 100vw;
+  height: 80vh;
+
+  z-index: 0;
+
+  background: #000000a2;
+
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  overflow-x: auto;
+  overflow-y: hidden;
+
+  .produtos {
+    padding: 3vw 5vh;
+
+    top: 9vh;
+    margin: 0 auto;
+
+    background: #ffffff;
+
+    display: none;
+    position: fixed;
+    z-index: 800;
+
+    width: 100%;
+
+    .line {
+      display: flex;
+      justify-content: space-between;
+
+      i {
+        color: #000;
+        scale: 2.4;
+      }
+    }
+
+    $i: 0;
+    @for $i from 2 through 5 {
+      .line-#{$i} {
+        margin-top: 6vh;
+      }
+    }
+  }
+
+  .slide-content {
+    width: 100%;
+    height: 80vh;
+
+    display: flex;
+    align-items: center;
+
+    background: #000;
+
+    .center-box {
+      border: solid 1px #fff;
+
+      width: 80%;
+      height: 30%;
+    }
+  }
+}
+
+@mixin second-container {
+  padding: 50px;
 }

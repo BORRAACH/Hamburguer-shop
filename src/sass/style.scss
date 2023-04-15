@@ -1,7 +1,5 @@
 @import "base";
 @import "mobile";
-@import "nav";
-@import "container";
 
 * {
   margin: 0;
@@ -19,7 +17,14 @@ body {
   nav {
     @include nav;
   }
-  .container {
+  .container-1 {
     @include first-container;
+
+    .slide-content {
+    }
+  }
+
+  .container-2 {
+    @include second-container;
   }
 }
