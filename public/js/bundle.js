@@ -1,99 +1,5 @@
 /******/ (() => { // webpackBootstrap
-/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
-
-/***/ "./src/js/bodyEvents.js":
-/*!******************************!*\
-  !*** ./src/js/bodyEvents.js ***!
-  \******************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "eventsBody": () => (/* binding */ eventsBody)
-/* harmony export */ });
-function eventsBody() {
-  window.addEventListener("scroll", function (e) {
-    var scrolled = window.scrollY;
-  });
-}
-
-
-/***/ }),
-
-/***/ "./src/js/mainComponents/adversting.js":
-/*!*********************************************!*\
-  !*** ./src/js/mainComponents/adversting.js ***!
-  \*********************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "loadElement": () => (/* binding */ loadElement)
-/* harmony export */ });
-function loadElement() {}
-
-
-/***/ }),
-
-/***/ "./src/js/nav.js":
-/*!***********************!*\
-  !*** ./src/js/nav.js ***!
-  \***********************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "globalNav": () => (/* binding */ globalNav)
-/* harmony export */ });
-function globalNav() {
-  var nav = document.querySelector("#first-nav");
-  var navA = document.querySelectorAll(".items-nav");
-  var largura = "".concat(window.innerWidth - 100, "px");
-  var body = document.querySelector("body");
-  var produtos = document.querySelector(".produtos");
-  var cardapio = document.querySelector("#cardapio");
-  produtos.style.width = largura;
-  cardapio.addEventListener("mouseover", function () {
-    produtos.style.display = "block";
-  });
-  cardapio.addEventListener("mouseout", function () {
-    produtos.style.display = "none";
-  });
-
-  // Adiciona os eventos de mouseover e mouseout no elemento "Produtos"
-  produtos.addEventListener("mouseover", function () {
-    produtos.style.display = "block";
-  });
-  produtos.addEventListener("mouseout", function () {
-    produtos.style.display = "none";
-  });
-  console.log(largura);
-}
-
-
-/***/ }),
-
-/***/ "./src/js/slideContainer.js":
-/*!**********************************!*\
-  !*** ./src/js/slideContainer.js ***!
-  \**********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "globalSlideCont": () => (/* binding */ globalSlideCont)
-/* harmony export */ });
-/* harmony import */ var _mainComponents_adversting__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./mainComponents/adversting */ "./src/js/mainComponents/adversting.js");
-
-function globalSlideCont() {
-  var slideCont = document.querySelector("#slide-cont-1");
-  var nav = document.querySelector("#first-nav");
-  slideCont.style.marginTop = "".concat(nav.style.height, "px");
-}
-
-
-/***/ }),
 
 /***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/sass/style.scss":
 /*!**********************************************************************************************************!*\
@@ -101,6 +7,7 @@ function globalSlideCont() {
   \**********************************************************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -114,9 +21,8 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 ___CSS_LOADER_EXPORT___.push([module.id, "@import url(//db.onlinewebfonts.com/c/35b626a8e74729592e71dad8350302db?family=McDonalds);"]);
-___CSS_LOADER_EXPORT___.push([module.id, "@import url(//db.onlinewebfonts.com/c/35b626a8e74729592e71dad8350302db?family=McDonalds);"]);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "* {\n  margin: 0;\n  padding: 0;\n  transition: 0.25s;\n  list-style-type: none;\n  text-decoration: none;\n  font-family: BlinkMacSystemFont, -apple-system, \"Segoe UI\", \"Roboto\", \"Oxygen\", \"Ubuntu\", \"Cantarell\", \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", \"Helvetica\", \"Arial\", sans-serif;\n}\n\nbody {\n  width: 100%;\n}\nbody nav {\n  width: 92%;\n  height: 9vh;\n  background: #fff;\n  -webkit-backdrop-filter: blur(5px);\n  backdrop-filter: blur(5px);\n  display: flex;\n  justify-content: space-between;\n  position: fixed;\n  z-index: 1010;\n  padding-left: 4vw;\n  padding-right: 4vw;\n}\nbody nav .left-box {\n  display: flex;\n  align-items: center;\n  width: 100%;\n  height: 100%;\n}\nbody nav .left-box .items-nav {\n  height: 100%;\n  color: #242424;\n  font-size: 1.2rem;\n  display: flex;\n  align-items: center;\n  padding-left: 0.7rem;\n  padding-right: 0.7rem;\n}\nbody nav .right-box {\n  height: 100%;\n  display: flex;\n  align-items: center;\n}\nbody nav .right-box #compra {\n  padding: 1.3rem;\n  border-radius: 3px;\n  background: rgb(224, 93, 18);\n  color: #fff;\n}\nbody .container-1 {\n  width: 100vw;\n  height: 80vh;\n  z-index: 0;\n  background: rgba(0, 0, 0, 0.6352941176);\n  position: relative;\n  display: flex;\n  align-items: center;\n  overflow-x: auto;\n  overflow-y: hidden;\n}\nbody .container-1 .produtos {\n  padding: 3vw 5vh;\n  top: 9vh;\n  margin: 0 auto;\n  background: #ffffff;\n  display: none;\n  position: fixed;\n  z-index: 800;\n  width: 100%;\n}\nbody .container-1 .produtos .line {\n  display: flex;\n  justify-content: space-between;\n}\nbody .container-1 .produtos .line i {\n  color: #000;\n  scale: 2.4;\n}\nbody .container-1 .produtos .line-2 {\n  margin-top: 6vh;\n}\nbody .container-1 .produtos .line-3 {\n  margin-top: 6vh;\n}\nbody .container-1 .produtos .line-4 {\n  margin-top: 6vh;\n}\nbody .container-1 .produtos .line-5 {\n  margin-top: 6vh;\n}\nbody .container-1 .slide-content {\n  width: 100%;\n  height: 80vh;\n  display: flex;\n  align-items: center;\n  background: #000;\n}\nbody .container-1 .slide-content .center-box {\n  border: solid 1px #fff;\n  width: 80%;\n  height: 30%;\n}\nbody .container-2 {\n  padding: 50px;\n}", "",{"version":3,"sources":["webpack://./src/sass/style.scss","webpack://./src/sass/_base.scss"],"names":[],"mappings":"AAGA;EACE,SAAA;EACA,UAAA;EAEA,iBAAA;EACA,qBAAA;EACA,qBAAA;EACA,oLCRa;ADOf;;AAIA;ECNE,WAAA;ADMF;AAGE;ECLA,UAAA;EACA,WAAA;EAEA,gBAAA;EACA,kCAAA;EACA,0BAAA;EAEA,aAAA;EACA,8BAAA;EACA,eAAA;EACA,aAAA;EAEA,iBAAA;EACA,kBAAA;ADEF;ACAE;EACE,aAAA;EACA,mBAAA;EAEA,WAAA;EACA,YAAA;ADCJ;ACCI;EACE,YAAA;EAEA,cAAA;EACA,iBAAA;EAEA,aAAA;EACA,mBAAA;EAEA,oBAAA;EACA,qBAAA;ADFN;ACME;EACE,YAAA;EAEA,aAAA;EACA,mBAAA;ADLJ;ACOI;EACE,eAAA;EACA,kBAAA;EAEA,4BAAA;EACA,WAAA;ADNN;AAjCE;EC6CA,YAAA;EACA,YAAA;EAEA,UAAA;EAEA,uCAAA;EAEA,kBAAA;EAEA,aAAA;EACA,mBAAA;EAEA,gBAAA;EACA,kBAAA;ADdF;ACgBE;EACE,gBAAA;EAEA,QAAA;EACA,cAAA;EAEA,mBAAA;EAEA,aAAA;EACA,eAAA;EACA,YAAA;EAEA,WAAA;ADlBJ;ACoBI;EACE,aAAA;EACA,8BAAA;ADlBN;ACoBM;EACE,WAAA;EACA,UAAA;ADlBR;ACwBM;EACE,eAAA;ADtBR;ACqBM;EACE,eAAA;ADnBR;ACkBM;EACE,eAAA;ADhBR;ACeM;EACE,eAAA;ADbR;ACkBE;EACE,WAAA;EACA,YAAA;EAEA,aAAA;EACA,mBAAA;EAEA,gBAAA;ADlBJ;ACoBI;EACE,sBAAA;EAEA,UAAA;EACA,WAAA;ADnBN;AA/EE;ECwGA,aAAA;ADtBF","sourcesContent":["@import \"base\";\n@import \"mobile\";\n\n* {\n  margin: 0;\n  padding: 0;\n  //box-sizing: border-box;\n  transition: 0.25s;\n  list-style-type: none;\n  text-decoration: none;\n  font-family: $primary-font;\n}\n\nbody {\n  @include body;\n\n  nav {\n    @include nav;\n  }\n  .container-1 {\n    @include first-container;\n\n    .slide-content {\n    }\n  }\n\n  .container-2 {\n    @include second-container;\n  }\n}\n","@import url(//db.onlinewebfonts.com/c/35b626a8e74729592e71dad8350302db?family=McDonalds);\n\n$primary-font: BlinkMacSystemFont, -apple-system, \"Segoe UI\", \"Roboto\", \"Oxygen\",\n  \"Ubuntu\", \"Cantarell\", \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\",\n  \"Helvetica\", \"Arial\", sans-serif;\n\n@mixin body() {\n  width: 100%;\n}\n\n@mixin nav {\n  width: 92%;\n  height: 9vh;\n\n  background: #fff;\n  -webkit-backdrop-filter: blur(5px);\n  backdrop-filter: blur(5px);\n\n  display: flex;\n  justify-content: space-between;\n  position: fixed;\n  z-index: 1010;\n\n  padding-left: 4vw;\n  padding-right: 4vw;\n\n  .left-box {\n    display: flex;\n    align-items: center;\n\n    width: 100%;\n    height: 100%;\n\n    .items-nav {\n      height: 100%;\n\n      color: #242424;\n      font-size: 1.2rem;\n\n      display: flex;\n      align-items: center;\n\n      padding-left: 0.7rem;\n      padding-right: 0.7rem;\n    }\n  }\n\n  .right-box {\n    height: 100%;\n\n    display: flex;\n    align-items: center;\n\n    #compra {\n      padding: 1.3rem;\n      border-radius: 3px;\n\n      background: rgb(224, 93, 18);\n      color: #fff;\n    }\n  }\n}\n\n@mixin first-container {\n  width: 100vw;\n  height: 80vh;\n\n  z-index: 0;\n\n  background: #000000a2;\n\n  position: relative;\n\n  display: flex;\n  align-items: center;\n\n  overflow-x: auto;\n  overflow-y: hidden;\n\n  .produtos {\n    padding: 3vw 5vh;\n\n    top: 9vh;\n    margin: 0 auto;\n\n    background: #ffffff;\n\n    display: none;\n    position: fixed;\n    z-index: 800;\n\n    width: 100%;\n\n    .line {\n      display: flex;\n      justify-content: space-between;\n\n      i {\n        color: #000;\n        scale: 2.4;\n      }\n    }\n\n    $i: 0;\n    @for $i from 2 through 5 {\n      .line-#{$i} {\n        margin-top: 6vh;\n      }\n    }\n  }\n\n  .slide-content {\n    width: 100%;\n    height: 80vh;\n\n    display: flex;\n    align-items: center;\n\n    background: #000;\n\n    .center-box {\n      border: solid 1px #fff;\n\n      width: 80%;\n      height: 30%;\n    }\n  }\n}\n\n@mixin second-container {\n  padding: 50px;\n}\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "* {\n  margin: 0;\n  padding: 0;\n  transition: 0.25s;\n  text-decoration: none;\n  font-family: BlinkMacSystemFont, -apple-system, \"Segoe UI\", \"Roboto\", \"Oxygen\", \"Ubuntu\", \"Cantarell\", \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", \"Helvetica\", \"Arial\", sans-serif;\n}\n\nbody {\n  width: 100%;\n}\nbody #first-nav {\n  width: 100%;\n}\nbody #first-nav ul .nav-text {\n  list-style-type: none;\n}", "",{"version":3,"sources":["webpack://./src/sass/style.scss","webpack://./src/sass/_base.scss"],"names":[],"mappings":"AAEA;EACE,SAAA;EACA,UAAA;EAEA,iBAAA;EACA,qBAAA;EACA,oLCNa;ADKf;;AAIA;ECJE,WAAA;ADIF;AAGE;ECHA,WAAA;ADGF;ACAI;EACE,qBAAA;ADEN","sourcesContent":["@import \"mobile\";\n\n* {\n  margin: 0;\n  padding: 0;\n  //box-sizing: border-box;\n  transition: 0.25s;\n  text-decoration: none;\n  font-family: $primary-font;\n}\n\nbody {\n  @include body;\n\n  #first-nav {\n    @include nav;\n  }\n}\n","@import url(//db.onlinewebfonts.com/c/35b626a8e74729592e71dad8350302db?family=McDonalds);\n\n$primary-font: BlinkMacSystemFont, -apple-system, \"Segoe UI\", \"Roboto\", \"Oxygen\",\n  \"Ubuntu\", \"Cantarell\", \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\",\n  \"Helvetica\", \"Arial\", sans-serif;\n\n@mixin body() {\n  width: 100%;\n}\n\n@mixin nav() {\n  width: 100%;\n\n  ul {\n    .nav-text {\n      list-style-type: none;\n    }\n  }\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -129,6 +35,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, "* {\n  margin: 0;\n  padding: 0;\n  tr
   \*****************************************************/
 /***/ ((module) => {
 
+"use strict";
 
 
 /*
@@ -223,6 +130,7 @@ module.exports = function (cssWithMappingToString) {
   \************************************************************/
 /***/ ((module) => {
 
+"use strict";
 
 
 module.exports = function (item) {
@@ -248,6 +156,7 @@ module.exports = function (item) {
   \****************************************************************************/
 /***/ ((module) => {
 
+"use strict";
 
 
 var stylesInDOM = [];
@@ -341,6 +250,7 @@ module.exports = function (list, options) {
   \********************************************************************/
 /***/ ((module) => {
 
+"use strict";
 
 
 var memo = {};
@@ -384,6 +294,7 @@ module.exports = insertBySelector;
   \**********************************************************************/
 /***/ ((module) => {
 
+"use strict";
 
 
 /* istanbul ignore next  */
@@ -403,6 +314,7 @@ module.exports = insertStyleElement;
   \**********************************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
+"use strict";
 
 
 /* istanbul ignore next  */
@@ -422,6 +334,7 @@ module.exports = setAttributesWithoutAttributes;
   \************************************************************************/
 /***/ ((module) => {
 
+"use strict";
 
 
 /* istanbul ignore next  */
@@ -587,24 +500,15 @@ module.exports = domAPI;
 var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be isolated against other entry modules.
 (() => {
-var __webpack_exports__ = {};
 /*!*************************!*\
   !*** ./src/js/index.js ***!
   \*************************/
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _nav__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./nav */ "./src/js/nav.js");
-/* harmony import */ var _slideContainer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./slideContainer */ "./src/js/slideContainer.js");
-/* harmony import */ var _bodyEvents__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./bodyEvents */ "./src/js/bodyEvents.js");
 
-
-
-(0,_nav__WEBPACK_IMPORTED_MODULE_0__.globalNav)();
-(0,_slideContainer__WEBPACK_IMPORTED_MODULE_1__.globalSlideCont)();
-(0,_bodyEvents__WEBPACK_IMPORTED_MODULE_2__.eventsBody)();
 })();
 
-// This entry need to be wrapped in an IIFE because it need to be isolated against other entry modules.
+// This entry need to be wrapped in an IIFE because it need to be in strict mode.
 (() => {
+"use strict";
 /*!*****************************!*\
   !*** ./src/sass/style.scss ***!
   \*****************************/

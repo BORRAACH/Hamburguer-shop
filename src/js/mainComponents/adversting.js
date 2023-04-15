@@ -1,3 +1,0 @@
-function loadElement() {}
-
-export { loadElement };
