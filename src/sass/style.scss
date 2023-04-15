@@ -17,10 +17,6 @@ body {
   }
 
   main {
-    .container {
-      @include container;
-    }
-
     .container-1 {
       @include container-1;
     }
