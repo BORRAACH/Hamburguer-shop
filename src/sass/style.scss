@@ -12,7 +12,17 @@
 body {
   @include body;
 
-  #first-nav {
+  nav {
     @include nav;
+  }
+
+  main {
+    .container {
+      @include container;
+    }
+
+    .container-1 {
+      @include container-1;
+    }
   }
 }
